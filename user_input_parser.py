@@ -56,7 +56,7 @@ drug_list['drugs'].append({
     'side_effects': 'Your skin may start burning'
 })
 drug_list['drugs'].append({
-    'name': 'Dexamethasone'
+    'name': 'Dexamethasone',
     'relieves' : 'itching', #'bites and stings', 'rash, 'allergies',
     'side_effects': "Irregular heartbeat, vomit that looks like coffee grounds, seizures"
 })
@@ -102,5 +102,6 @@ def get_drug(symptom):
         for j in range(0,len(drug_list[i])):
             if(symptom == drug_list[i][j]['relieves']):
                 return drug_list[i][j]['name'], drug_list[i][j]['relieves'], drug_list[i][j]['side_effects']
+    return False
 
-print(get_drug('x'))
+print(get_drug('poop'))
