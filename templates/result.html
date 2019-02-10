@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<div class="input">
+	{% if drug %}
+		<h1>Name: {{drug[0]}}</h1><br>
+		<h1>Side effects: {{drug[2]}}</h1>
+	{% else %}
+		<h1>Ain't no drug for whatever you have. Start praying.</h1>
+	{% endif %}
+	</div>
+{% endblock %}
