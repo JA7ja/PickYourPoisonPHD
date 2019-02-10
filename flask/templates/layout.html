@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Cancer in website form</title>
+  <link type = 'text/css' rel = 'stylesheet' href = {{url_for('static', filename = 'style.css')}}></link>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href = {{url_for('static', filename = 'bootstrap.min.css')}} rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href= {{url_for('static', filename = 'mdb.min.css')}} rel="stylesheet">
+</head>
+
+
+  <body>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+    </ul>
+    <div class = "container">
+      {% block body %}
+      {% endblock %}
+    </div>
+    <ul class = 'footer'>
+      <li><a href= {{url_for('team')}}>The Team</a></li>
+      <li><a href= {{url_for('about')}}>    </a></li>
+    </ul>
+  <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="/static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="/static/js/mdb.js"></script><div class="hiddendiv common"></div>
+  </body>
+</html>
